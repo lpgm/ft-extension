@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			tabs => {
 				const tab = tabs[0];
 				chrome.tabs.executeScript(tab.id, {
-					code: 'document.querySelector(".o-cookie-message__outer").remove()'
+					code: 'document.querySelector(".o-cookie-message__outer") && document.querySelector(".o-cookie-message__outer").remove()'
 				});
 			}
 		);
