@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "FT Extension",
 	"description": "",
-	"version": "1.2.0",
+	"version": "1.3.0",
 	"browser_action": {
 		"default_icon": "icon.png",
 		"default_popup": ""
@@ -15,7 +15,7 @@
 		{
 			"matches": ["https://www.ft.com/*"],
 			"js": ["content.js"],
-			"run_at": "document_end"
+			"run_at": "document_idle"
 		}
 	],
 	"permissions": ["https://*/*", "http://*/*", "tabs"]
